@@ -1,12 +1,11 @@
 import 'dart:async';
 import 'dart:collection';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
-import 'package:my_map/ui/service/utils/utils_service.dart';
+
+import '../../../service/utils/utils_service.dart';
 
 class HomeViewModel extends ChangeNotifier {
 
