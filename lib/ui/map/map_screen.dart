@@ -15,7 +15,7 @@ class MapScreen extends StatelessWidget {
       markers: context.watch<HomeViewModel>().markers,
       polygons: context.watch<HomeViewModel>().polygons,
       onTap: (LatLng point) {
-        context.read<HomeViewModel>().clickMap(point);
+        context.read<HomeViewModel>().clickMap(point);//
       },
       onMapCreated: (GoogleMapController ctn) {
         context.read<HomeViewModel>().controller.complete(ctn);
