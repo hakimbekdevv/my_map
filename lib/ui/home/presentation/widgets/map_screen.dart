@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
 
-import '../home/provider/home_view_model.dart';
+import '../../provider/home_view_model.dart';
 
 class MapScreen extends StatelessWidget {
   const MapScreen({super.key});

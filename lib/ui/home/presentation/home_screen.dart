@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:my_map/ui/home/provider/home_view_model.dart';
-import 'package:my_map/ui/map/map_screen.dart';
+import 'package:my_map/ui/home/presentation/widgets/map_screen.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {
