@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
+import 'package:my_map/ui/service/utils/utils_service.dart';
 
 class HomeViewModel extends ChangeNotifier {
 
@@ -70,6 +71,7 @@ class HomeViewModel extends ChangeNotifier {
   void addPolygon() {
     isAddingPolygon = true;
     userPoints.clear();
+    UtilsService.fToast('Pleace select locations');
     notifyListeners();
   }
 

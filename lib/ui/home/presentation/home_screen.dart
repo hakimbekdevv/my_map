@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:my_map/ui/home/provider/home_view_model.dart';
+import 'package:my_map/ui/map/map_screen.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -27,18 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Stack(
         children: [
-          GoogleMap(
-            mapType: context.watch<HomeViewModel>().mapType,
-            initialCameraPosition: context.watch<HomeViewModel>().bukhara,
-            markers: context.watch<HomeViewModel>().markers,
-            polygons: context.watch<HomeViewModel>().polygons,
-            onTap: (LatLng point) {
-              context.read<HomeViewModel>().clickMap(point);
-            },
-            onMapCreated: (GoogleMapController ctn) {
-              context.read<HomeViewModel>().controller.complete(ctn);
-            },
-          ),
+          const MapScreen(),
           Positioned(
             left: 10,
             top: 10,
